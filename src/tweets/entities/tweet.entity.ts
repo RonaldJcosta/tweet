@@ -5,6 +5,6 @@ import {Column, Table, Model} from 'sequelize-typescript';
 })
 export class Tweet extends Model {
   @Column
-  name: string;
+  text: string;
 
 }
