@@ -34,7 +34,7 @@ export class TweetsCountService {
             this.cacheManager.set('tweet-offset', offset +  this.limit, {
                 ttl: 1 * 60 * 10
             });
-        this.emailsQueue.add({ tweets: tweets.map(t => t.toJSON)});
+        this.emailsQueue.add({ tweets: tweets.map(tweet => tweet.toJSON())});
         }
     }    
 }
