@@ -1,6 +1,4 @@
 import {Module} from '@nestjs/common';
-import {AppController} from './app.controller';
-import {AppService} from './app.service';
 import {TweetsModule} from './tweets/tweets.module';
 import {join} from 'path';
 import {SequelizeModule} from '@nestjs/sequelize';
@@ -26,7 +24,5 @@ import { MailingModule } from './mailing/mailing.module';
     TweetsModule,
     MailingModule
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
